@@ -31,7 +31,7 @@ int main()
     for(unsigned int i = 0; i < vec.size(); ++i)
         vec[i] = i;
 
-    std::shuffle(begin(vec), end(vec), mersenne_engie);
+    std::shuffle(begin(vec), end(vec), mersenne_engine);
 
     for(auto &e : vec) cout << e << " ";
     cout << endl;
