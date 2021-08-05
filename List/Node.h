@@ -1,4 +1,4 @@
-class Node
+class Node : public Line
 {
 	Node* link;
 	int data;
@@ -7,6 +7,9 @@ public:
 	Node(const int &val)
 	: data(val), link(NULL)
 	{}
+    Line(char *str="")
+    :Line(str), link(NULL)
+    {}
 
 	Node* getLink(){return link;}
 	void setLink(Node* next) {link = next;}
