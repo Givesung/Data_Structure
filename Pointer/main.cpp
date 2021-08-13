@@ -1,11 +1,11 @@
 #include "Student.h"
+#include "Maze.h"
 
 int main()
 {
-	Student s(202020, "qwer", "qwer");
+    Maze maze;
+    maze.init(20,10);
+    maze.load("maze.txt");
 
-
-	s.display();
-	
 	return 0;
 }
